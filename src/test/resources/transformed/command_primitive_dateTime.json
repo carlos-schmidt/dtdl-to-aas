@@ -1,0 +1,144 @@
+{
+    "constraints": [
+        {
+            "type": "@id",
+            "valueType": "string",
+            "value": null,
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "comment",
+            "valueType": "string",
+            "value": null,
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "commandType",
+            "valueType": "string",
+            "value": null,
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "semanticId": {},
+    "hasDataSpecification": [],
+    "idShort": "reboot",
+    "category": null,
+    "modelType": {
+        "name": "Operation"
+    },
+    "inputVariable": [
+        {
+            "value": {
+                "constraints": [
+                    {
+                        "type": "@id",
+                        "valueType": "string",
+                        "value": "dtmi:hello:world:Id;1234",
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    },
+                    {
+                        "type": "comment",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    },
+                    {
+                        "type": "writable",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    }
+                ],
+                "value": null,
+                "valueId": null,
+                "semanticId": {},
+                "hasDataSpecification": [],
+                "idShort": "rebootTime",
+                "category": "VARIABLE",
+                "modelType": {
+                    "name": "Property"
+                },
+                "valueType": "dateTime",
+                "kind": "Instance",
+                "displayName": [
+                    {
+                        "language": "en",
+                        "text": "Reboot Time"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "language": "en",
+                        "text": "Requested time to reboot the device."
+                    }
+                ]
+            },
+            "modelType": {
+                "name": "OperationVariable"
+            }
+        }
+    ],
+    "outputVariable": [
+        {
+            "value": {
+                "constraints": [
+                    {
+                        "type": "@id",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    },
+                    {
+                        "type": "comment",
+                        "valueType": "string",
+                        "value": "This is a test comment... #Test",
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    },
+                    {
+                        "type": "writable",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    }
+                ],
+                "value": null,
+                "valueId": null,
+                "semanticId": {},
+                "hasDataSpecification": [],
+                "idShort": "scheduledTime",
+                "category": "VARIABLE",
+                "modelType": {
+                    "name": "Property"
+                },
+                "valueType": "dateTime",
+                "kind": "Instance",
+                "displayName": null,
+                "descriptions": null
+            },
+            "modelType": {
+                "name": "OperationVariable"
+            }
+        }
+    ],
+    "kind": "Instance",
+    "displayName": null,
+    "descriptions": null
+}

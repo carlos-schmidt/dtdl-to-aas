@@ -1,0 +1,9 @@
+{
+    "@type": "Component",
+    "name": "filamentStorage",
+    "schema": "dtmi:com:example:FilamentStorage;1",
+    "@id": "dtmi:com:example:FilamentStorageComponent;1",
+    "comment": "A filament storage component element",
+    "displayName": "Filament Storage",
+    "description": "Filament storage as source of material for this printer."
+}

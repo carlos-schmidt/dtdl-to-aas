@@ -1,0 +1,44 @@
+{
+    "value": {
+        "submodelElement": {
+            "value": "",
+            "valueId": null,
+            "semanticId": {},
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": "$.['@id']",
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": "$.['comment']",
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "hasDataSpecification": null,
+            "idShort": "$.name",
+            "category": "VARIABLE",
+            "modelType": {
+                "name": "Property"
+            },
+            "valueType": {
+                "dataObjectType": {
+                    "name": "$.schema"
+                }
+            },
+            "kind": "Instance",
+            "displayName": null,
+            "descriptions": null
+        }
+    },
+    "modelType": {
+        "name": "OperationVariable"
+    }
+}

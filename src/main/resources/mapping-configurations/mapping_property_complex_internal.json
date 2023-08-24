@@ -1,0 +1,17 @@
+{   "constraints": [
+    { "type": "@id",
+    "valueType": "string",
+    "value": "$.['@id']",
+    "modelType": { "name": "Qualifier" }
+    }
+  ],
+  "ordered": false,
+  "allowDuplicates": true,
+  "idShort": "$.['name']",
+  "displayName": null,
+  "descriptions": null,
+  "category": "CONSTANT",
+  "modelType": { "name": "SubmodelElementCollection" },
+  "kind": "Instance",
+  "value": null
+}

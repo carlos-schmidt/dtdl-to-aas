@@ -1,0 +1,2218 @@
+{
+  "assetAdministrationShells": [
+    {
+      "hasDataSpecification": [],
+      "asset": {
+        "keys": [
+          {
+            "type": "Asset",
+            "local": true,
+            "value": "http://example.com/3d-printer/asset",
+            "index": 0,
+            "idType": "IRI"
+          }
+        ]
+      },
+      "submodels": [
+        {
+          "keys": [
+            {
+              "type": "Submodel",
+              "local": true,
+              "value": "http://www.example.com/3d-printer/submodels/nameplate",
+              "index": 0,
+              "idType": "IRI"
+            }
+          ]
+        },
+        {
+          "keys": [
+            {
+              "type": "Submodel",
+              "local": true,
+              "value": "http://www.example.com/3d-printer/submodels/functionality",
+              "index": 0,
+              "idType": "IRI"
+            }
+          ]
+        }
+      ],
+      "conceptDictionaries": [],
+      "identification": {
+        "idType": "IRI",
+        "id": "http://www.example.com/3d-printer/aas"
+      },
+      "idShort": "3DPrinterShell",
+      "category": "VARIABLE",
+      "modelType": {
+        "name": "AssetAdministrationShell"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "identification": {
+        "idType": "IRI",
+        "id": "http://example.com/3d-printer/asset"
+      },
+      "idShort": "3DPrinterAsset",
+      "modelType": {
+        "name": "Asset"
+      },
+      "kind": "Instance"
+    }
+  ],
+  "submodels": [
+    {
+      "semanticId": {
+        "keys": [
+          {
+            "type": "ConceptDescription",
+            "local": true,
+            "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate",
+            "index": 0,
+            "idType": "IRI"
+          }
+        ]
+      },
+      "qualifiers": [],
+      "hasDataSpecification": [],
+      "identification": {
+        "idType": "IRI",
+        "id": "http://www.example.com/3d-printer/submodels/nameplate"
+      },
+      "idShort": "Nameplate",
+      "category": "VARIABLE",
+      "modelType": {
+        "name": "Submodel"
+      },
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "value": {
+            "langString": [
+              {
+                "language": "de",
+                "text": "3D-Printer Company"
+              }
+            ]
+          },
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "0173-1#02-AAO677#002",
+                "index": 0,
+                "idType": "IRDI"
+              }
+            ]
+          },
+          "constraints": [
+            {
+              "type": "Multiplicity",
+              "valueType": "",
+              "value": "One",
+              "modelType": {
+                "name": "Qualifier"
+              }
+            }
+          ],
+          "hasDataSpecification": [],
+          "idShort": "ManufacturerName",
+          "category": "PARAMETER",
+          "modelType": {
+            "name": "MultiLanguageProperty"
+          },
+          "kind": "Instance"
+        },
+        {
+          "value": {
+            "langString": [
+              {
+                "language": "de",
+                "text": "ABC-123"
+              },
+              {
+                "language": "en",
+                "text": "ABC-123"
+              }
+            ]
+          },
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "0173-1#02-AAW338#001",
+                "index": 0,
+                "idType": "IRDI"
+              }
+            ]
+          },
+          "constraints": [
+            {
+              "type": "Multiplicity",
+              "valueType": "",
+              "value": "One",
+              "modelType": {
+                "name": "Qualifier"
+              }
+            }
+          ],
+          "hasDataSpecification": [],
+          "idShort": "ManufacturerProductDesignation",
+          "category": "PARAMETER",
+          "modelType": {
+            "name": "MultiLanguageProperty"
+          },
+          "kind": "Instance"
+        },
+        {
+          "ordered": false,
+          "allowDuplicates": true,
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "0173-1#02-AAQ832#005",
+                "index": 0,
+                "idType": "IRDI"
+              }
+            ]
+          },
+          "constraints": [
+            {
+              "type": "Multiplicity",
+              "valueType": "",
+              "value": "One",
+              "modelType": {
+                "name": "Qualifier"
+              }
+            }
+          ],
+          "hasDataSpecification": [],
+          "idShort": "Address",
+          "category": "VARIABLE",
+          "modelType": {
+            "name": "SubmodelElementCollection"
+          },
+          "value": [
+            {
+              "value": {
+                "langString": [
+                  {
+                    "language": "de",
+                    "text": "Vertrieb"
+                  },
+                  {
+                    "language": "en",
+                    "text": "Sales"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO127#003",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToOne",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "Department",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": {
+                "langString": [
+                  {
+                    "language": "de",
+                    "text": "Musterstraße 1"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO128#002",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "One",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "Street",
+              "category": "PARAMETER",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": {
+                "langString": [
+                  {
+                    "language": "de",
+                    "text": "12345"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO129#002",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "One",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "Zipcode",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": {
+                "langString": [
+                  {
+                    "language": "de",
+                    "text": "PF 1234"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO130#002",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToOne",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "POBox",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": {
+                "langString": [
+                  {
+                    "language": "de",
+                    "text": "12345"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO131#002",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToOne",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "ZipCodeOfPOBox",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": {
+                "langString": [
+                  {
+                    "language": "de",
+                    "text": "Musterstadt"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO132#002",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "One",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "CityTown",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": {
+                "langString": [
+                  {
+                    "language": "de",
+                    "text": "Muster-Bundesland"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO133#002",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToOne",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "StateCounty",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": {
+                "langString": [
+                  {
+                    "language": "de",
+                    "text": "DE"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO134#002",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "One",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "NationalCode",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": {
+                "langString": [
+                  {
+                    "language": "de",
+                    "text": "DE123456789"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO135#002",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToOne",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "VATNumber",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": {
+                "langString": []
+              },
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAO202#003",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToOne",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "AddressRemarks",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "MultiLanguageProperty"
+              },
+              "kind": "Instance"
+            },
+            {
+              "value": "",
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAQ326#002",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToOne",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "AddressOfAdditionalLink",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "Property"
+              },
+              "valueType": {
+                "dataObjectType": {
+                  "name": ""
+                }
+              },
+              "kind": "Instance"
+            },
+            {
+              "ordered": false,
+              "allowDuplicates": false,
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAQ833#005",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToMany",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "Phone",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "SubmodelElementCollection"
+              },
+              "value": [
+                {
+                  "value": {
+                    "langString": [
+                      {
+                        "language": "de",
+                        "text": "+491234567890"
+                      }
+                    ]
+                  },
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-AAO136#002",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "One",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "TelephoneNumber",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "MultiLanguageProperty"
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": "1",
+                  "valueId": {
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "local": false,
+                        "value": "0173-1#07-AAS754#001",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-AAO137#003",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "ZeroToOne",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "TypeOfTelephone",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                }
+              ],
+              "kind": "Instance"
+            },
+            {
+              "ordered": false,
+              "allowDuplicates": false,
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAQ834#005",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToMany",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "Fax",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "SubmodelElementCollection"
+              },
+              "value": [
+                {
+                  "value": {
+                    "langString": [
+                      {
+                        "language": "de",
+                        "text": "+491234567890"
+                      }
+                    ]
+                  },
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-AAO195#002",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "One",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "FaxNumber",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "MultiLanguageProperty"
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": "1",
+                  "valueId": {
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "local": false,
+                        "value": "0173-1#07-AAS754#001",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-AAO196#003",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "ZeroToOne",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "TypeOfFaxNumber",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                }
+              ],
+              "kind": "Instance"
+            },
+            {
+              "ordered": false,
+              "allowDuplicates": false,
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "0173-1#02-AAQ836#005",
+                    "index": 0,
+                    "idType": "IRDI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "ZeroToMany",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "Email",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "SubmodelElementCollection"
+              },
+              "value": [
+                {
+                  "value": "email@3D-Printer-Company.de",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-AAO198#002",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "One",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "EmailAddress",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": {
+                    "langString": []
+                  },
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-AAO200#002",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "ZeroToOne",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "PublicKey",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "MultiLanguageProperty"
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": "1",
+                  "valueId": {
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "local": false,
+                        "value": "0173-1#07-AAS754#001",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-AAO199#003",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "ZeroToOne",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "TypeOfEmailAddress",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": {
+                    "langString": []
+                  },
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-AAO201#002",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "ZeroToOne",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "TypeOfPublickKey",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "MultiLanguageProperty"
+                  },
+                  "kind": "Instance"
+                }
+              ],
+              "kind": "Instance"
+            }
+          ],
+          "kind": "Instance"
+        },
+        {
+          "value": {
+            "langString": [
+              {
+                "language": "de",
+                "text": "Printers"
+              }
+            ]
+          },
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "0173-1#02-AAU731#001",
+                "index": 0,
+                "idType": "IRDI"
+              }
+            ]
+          },
+          "constraints": [
+            {
+              "type": "Multiplicity",
+              "valueType": "",
+              "value": "One",
+              "modelType": {
+                "name": "Qualifier"
+              }
+            }
+          ],
+          "hasDataSpecification": [],
+          "idShort": "ManufacturerProductFamily",
+          "category": "PARAMETER",
+          "modelType": {
+            "name": "MultiLanguageProperty"
+          },
+          "kind": "Instance"
+        },
+        {
+          "value": "12345678",
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "0173-1#02-AAM556#002",
+                "index": 0,
+                "idType": "IRDI"
+              }
+            ]
+          },
+          "constraints": [
+            {
+              "type": "Multiplicity",
+              "valueType": "",
+              "value": "ZeroToOne",
+              "modelType": {
+                "name": "Qualifier"
+              }
+            }
+          ],
+          "hasDataSpecification": [],
+          "idShort": "SerialNumber",
+          "category": "PARAMETER",
+          "modelType": {
+            "name": "Property"
+          },
+          "valueType": {
+            "dataObjectType": {
+              "name": ""
+            }
+          },
+          "kind": "Instance"
+        },
+        {
+          "value": "2022",
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "0173-1#02-AAP906#001",
+                "index": 0,
+                "idType": "IRDI"
+              }
+            ]
+          },
+          "constraints": [
+            {
+              "type": "Multiplicity",
+              "valueType": "",
+              "value": "One",
+              "modelType": {
+                "name": "Qualifier"
+              }
+            }
+          ],
+          "hasDataSpecification": [],
+          "idShort": "YearOfConstruction",
+          "category": "PARAMETER",
+          "modelType": {
+            "name": "Property"
+          },
+          "valueType": {
+            "dataObjectType": {
+              "name": ""
+            }
+          },
+          "kind": "Instance"
+        },
+        {
+          "ordered": false,
+          "allowDuplicates": true,
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/Markings",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "constraints": [
+            {
+              "type": "Multiplicity",
+              "valueType": "",
+              "value": "ZeroToOne",
+              "modelType": {
+                "name": "Qualifier"
+              }
+            }
+          ],
+          "hasDataSpecification": [],
+          "idShort": "Markings",
+          "category": "VARIABLE",
+          "modelType": {
+            "name": "SubmodelElementCollection"
+          },
+          "value": [
+            {
+              "ordered": false,
+              "allowDuplicates": true,
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/Markings/Marking",
+                    "index": 0,
+                    "idType": "IRI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "OneToMany",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "CE",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "SubmodelElementCollection"
+              },
+              "value": [
+                {
+                  "value": "",
+                  "valueId": {
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "local": false,
+                        "value": "0173-1#07-DAA603#004",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/Markings/Marking/MarkingName",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "One",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "MarkingName",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "mimeType": "image/png",
+                  "value": "/aasx/files/european-union-ce-marking.png",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/Markings/Marking/MarkingFile",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "One",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "MarkingFile",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "File"
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": "",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/Markings/Marking/MarkingAdditionalText",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "ZeroToMany",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "MarkingAdditionalText",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                }
+              ],
+              "kind": "Instance"
+            },
+            {
+              "ordered": false,
+              "allowDuplicates": true,
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/Markings/Marking",
+                    "index": 0,
+                    "idType": "IRI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "OneToMany",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "GS",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "SubmodelElementCollection"
+              },
+              "value": [
+                {
+                  "value": "",
+                  "valueId": {
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "local": false,
+                        "value": "0173-1#07-AAA374#003",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/Markings/Marking/MarkingName",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "One",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "MarkingName",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "mimeType": "image/png",
+                  "value": "/aasx/files/601px-GS.png",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/Markings/Marking/MarkingFile",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "One",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "MarkingFile",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "File"
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": "",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/Markings/Marking/MarkingAdditionalText",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "ZeroToMany",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "MarkingAdditionalText",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                }
+              ],
+              "kind": "Instance"
+            }
+          ],
+          "kind": "Instance"
+        },
+        {
+          "ordered": false,
+          "allowDuplicates": true,
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/AssetSpecificProperties",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "constraints": [
+            {
+              "type": "Multiplicity",
+              "valueType": "",
+              "value": "ZeroToOne",
+              "modelType": {
+                "name": "Qualifier"
+              }
+            }
+          ],
+          "hasDataSpecification": [],
+          "idShort": "AssetSpecificProperties",
+          "category": "VARIABLE",
+          "modelType": {
+            "name": "SubmodelElementCollection"
+          },
+          "value": [
+            {
+              "ordered": false,
+              "allowDuplicates": false,
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/AssetSpecificProperties/GuidelineSpecificProperties",
+                    "index": 0,
+                    "idType": "IRI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "OneToMany",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "AssetSize",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "SubmodelElementCollection"
+              },
+              "value": [
+                {
+                  "value": "800",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "http://example.com/3d-printer/concept-descriptions/assetSize",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "constraints": [],
+                  "hasDataSpecification": [],
+                  "idShort": "AssetLength",
+                  "category": "CONSTANT",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": "750",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": false,
+                        "value": "http://example.com/3d-printer/concept-descriptions/assetSize",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "idShort": "AssetWidth",
+                  "category": "PARAMETER",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": "800",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": false,
+                        "value": "http://example.com/3d-printer/concept-descriptions/assetSize",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "idShort": "AssetHeight",
+                  "category": "PARAMETER",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "mimeType": "application/pdf",
+                  "value": "/files/3d-printer/manual.pdf",
+                  "semanticId": {
+                    "keys": []
+                  },
+                  "idShort": "Manual_PDF",
+                  "modelType": {
+                    "name": "File"
+                  },
+                  "kind": "Instance"
+                }
+              ],
+              "kind": "Instance"
+            },
+            {
+              "ordered": false,
+              "allowDuplicates": false,
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "local": true,
+                    "value": "https://admin-shell.io/zvei/nameplate/1/0/Nameplate/AssetSpecificProperties/GuidelineSpecificProperties",
+                    "index": 0,
+                    "idType": "IRI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "type": "Multiplicity",
+                  "valueType": "",
+                  "value": "OneToMany",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "hasDataSpecification": [],
+              "idShort": "GuidelineSpecificProperties_1",
+              "category": "VARIABLE",
+              "modelType": {
+                "name": "SubmodelElementCollection"
+              },
+              "value": [
+                {
+                  "value": "EU Directive 2014/68/EU",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-AAO856#002",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [
+                    {
+                      "type": "Multiplicity",
+                      "valueType": "",
+                      "value": "One",
+                      "modelType": {
+                        "name": "Qualifier"
+                      }
+                    }
+                  ],
+                  "hasDataSpecification": [],
+                  "idShort": "GuidelineForConformityDeclaration",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                },
+                {
+                  "value": "101325",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": true,
+                        "value": "0173-1#02-BAA447#006",
+                        "index": 0,
+                        "idType": "IRDI"
+                      }
+                    ]
+                  },
+                  "constraints": [],
+                  "hasDataSpecification": [],
+                  "idShort": "maxPressure",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance"
+                }
+              ],
+              "kind": "Instance"
+            }
+          ],
+          "kind": "Instance"
+        }
+      ]
+    },
+    {
+      "semanticId": {
+        "keys": []
+      },
+      "identification": {
+        "idType": "IRI",
+        "id": "http://www.example.com/3d-printer/submodels/functionality"
+      },
+      "idShort": "Functionality",
+      "modelType": {
+        "name": "Submodel"
+      },
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "value": "20",
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "http://example.com/3d-printer/concept-descriptions/temperature",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "idShort": "ActualTemperature",
+          "category": "VARIABLE",
+          "modelType": {
+            "name": "Property"
+          },
+          "valueType": {
+            "dataObjectType": {
+              "name": ""
+            }
+          },
+          "kind": "Instance"
+        },
+        {
+          "value": "65",
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "http://example.com/3d-printer/concept-descriptions/temperature",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "idShort": "DesiredTemperature",
+          "category": "PARAMETER",
+          "modelType": {
+            "name": "Property"
+          },
+          "valueType": {
+            "dataObjectType": {
+              "name": ""
+            }
+          },
+          "kind": "Instance"
+        },
+        {
+          "observed": {
+            "keys": [
+              {
+                "type": "Submodel",
+                "local": true,
+                "value": "http://www.example.com/3d-printer/submodels/functionality",
+                "index": 0,
+                "idType": "IRI"
+              },
+              {
+                "type": "Property",
+                "local": true,
+                "value": "ActualTemperature",
+                "index": 1,
+                "idType": "IdShort"
+              }
+            ]
+          },
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": false,
+                "value": "https://admin-shell.io/tmp/AAS/Events/UpdateValueOutwards",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "constraints": [
+            {
+              "type": "PredicateRelation",
+              "valueType": "",
+              "valueId": {
+                "keys": [
+                  {
+                    "type": "Property",
+                    "local": true,
+                    "value": "ActualTemperature",
+                    "index": 0,
+                    "idType": "IdShort"
+                  }
+                ]
+              },
+              "value": "GREATER_THAN_70",
+              "modelType": {
+                "name": "Qualifier"
+              }
+            }
+          ],
+          "hasDataSpecification": [],
+          "idShort": "DesiredTemperatureReached",
+          "modelType": {
+            "name": "BasicEvent"
+          },
+          "kind": "Instance",
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "This event indicates that the desired temperature of the filament was reached."
+            }
+          ]
+        },
+        {
+          "value": "10",
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": false,
+                "value": "http://example.com/3d-printer/concept-descriptions/proximity",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "idShort": "PrintHeadProximity",
+          "category": "VARIABLE",
+          "modelType": {
+            "name": "Property"
+          },
+          "valueType": {
+            "dataObjectType": {
+              "name": ""
+            }
+          },
+          "kind": "Instance"
+        },
+        {
+          "semanticId": {
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "http://example.com/3d-printer/concept-descriptions/operation",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "constraints": [],
+          "hasDataSpecification": [],
+          "idShort": "StartPrintProgram",
+          "modelType": {
+            "name": "Operation"
+          },
+          "inputVariable": [
+            {
+              "value": {
+                "submodelElement": {
+                  "value": "",
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "local": false,
+                        "value": "http://admin-shell.io/tmp/SG2/TechnicalData/Section/TechnicalProperties/1/0",
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "idShort": "ProgramName",
+                  "category": "VARIABLE",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance",
+                  "descriptions": [
+                    {
+                      "language": "en",
+                      "text": "Name of the program to be started"
+                    }
+                  ]
+                }
+              },
+              "modelType": {
+                "name": "OperationVariable"
+              }
+            }
+          ],
+          "outputVariable": [
+            {
+              "value": {
+                "submodelElement": {
+                  "value": "",
+                  "semanticId": {
+                    "keys": []
+                  },
+                  "idShort": "Result",
+                  "category": "PARAMETER",
+                  "modelType": {
+                    "name": "Property"
+                  },
+                  "valueType": {
+                    "dataObjectType": {
+                      "name": ""
+                    }
+                  },
+                  "kind": "Instance",
+                  "descriptions": [
+                    {
+                      "language": "en",
+                      "text": "A return value of this operation"
+                    }
+                  ]
+                }
+              },
+              "modelType": {
+                "name": "OperationVariable"
+              }
+            }
+          ],
+          "inoutputVariable": [],
+          "kind": "Instance",
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Start a printing program on this printer, specified by the name of the program."
+            }
+          ]
+        },
+        {
+          "entityType": "SelfManagedEntity",
+          "asset": {
+            "keys": [
+              {
+                "type": "Asset",
+                "local": true,
+                "value": "http://www.example.com/filament-storage/asset",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "semanticId": {
+            "keys": []
+          },
+          "constraints": [],
+          "hasDataSpecification": [],
+          "idShort": "FilamentStorage",
+          "modelType": {
+            "name": "Entity"
+          },
+          "statements": [
+            {
+              "value": {
+                "keys": [
+                  {
+                    "type": "AssetAdministrationShell",
+                    "local": false,
+                    "value": "http://www.example.com/filament-storage/aas",
+                    "index": 0,
+                    "idType": "IRI"
+                  }
+                ]
+              },
+              "semanticId": {
+                "keys": []
+              },
+              "idShort": "FilamentStorageAssetAdministrationShellReference",
+              "category": "CONSTANT",
+              "modelType": {
+                "name": "ReferenceElement"
+              },
+              "kind": "Instance",
+              "descriptions": [
+                {
+                  "language": "en",
+                  "text": "A reference to the Asset Administration Shell of this component"
+                }
+              ]
+            }
+          ],
+          "kind": "Instance"
+        }
+      ]
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "identification": {
+        "idType": "IRI",
+        "id": "http://example.com/3d-printer/concept-descriptions/assetSize"
+      },
+      "idShort": "AssetSize",
+      "modelType": {
+        "name": "ConceptDescription"
+      },
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "local": false,
+                "value": "https://reference.opcfoundation.org/v104/I4AAS/v100/docs/6.10.3/",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "EN",
+                "text": "Size in millimeters"
+              }
+            ],
+            "unit": "",
+            "sourceOfDefinition": "",
+            "dataType": "integer",
+            "definition": [
+              {
+                "language": "EN",
+                "text": "Size in millimeters."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "identification": {
+        "idType": "IRI",
+        "id": "http://example.com/3d-printer/concept-descriptions/temperature"
+      },
+      "idShort": "Temperature",
+      "modelType": {
+        "name": "ConceptDescription"
+      },
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "local": false,
+                "value": "https://reference.opcfoundation.org/v104/I4AAS/v100/docs/6.10.3/",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "EN",
+                "text": "Temperature"
+              }
+            ],
+            "unit": "",
+            "sourceOfDefinition": "",
+            "dataType": "integer",
+            "definition": [
+              {
+                "language": "EN",
+                "text": "Temperature measurements emitted by a sensor in degree celsius."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "identification": {
+        "idType": "IRI",
+        "id": "http://example.com/3d-printer/concept-descriptions/proximity"
+      },
+      "idShort": "Proximity",
+      "modelType": {
+        "name": "ConceptDescription"
+      },
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "local": false,
+                "value": "https://reference.opcfoundation.org/v104/I4AAS/v100/docs/6.10.3/",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "EN",
+                "text": "Proximity"
+              }
+            ],
+            "unit": "mm",
+            "sourceOfDefinition": "",
+            "dataType": "integer",
+            "definition": [
+              {
+                "language": "EN",
+                "text": "Proximity to an object as measured by a proximity sensor."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "identification": {
+        "idType": "IRI",
+        "id": "http://example.com/3d-printer/concept-descriptions/operation"
+      },
+      "idShort": "AssetOperation",
+      "modelType": {
+        "name": "ConceptDescription"
+      },
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "local": false,
+                "value": "https://reference.opcfoundation.org/v104/I4AAS/v100/docs/6.10.3/",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "EN",
+                "text": "AssetOperation"
+              }
+            ],
+            "unit": "",
+            "sourceOfDefinition": "",
+            "dataType": "integer",
+            "definition": [
+              {
+                "language": "EN",
+                "text": "An operation executable on the asset."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

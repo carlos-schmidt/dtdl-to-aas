@@ -1,0 +1,982 @@
+{
+    "semanticId": {
+        "keys": []
+    },
+    "qualifiers": [
+        {
+            "type": "@context",
+            "valueType": "string",
+            "value": "dtmi:dtdl:context;2",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "comment",
+            "valueType": "string",
+            "value": null,
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "hasDataSpecification": null,
+    "identification": {
+        "idType": "Custom",
+        "id": "dtmi:com:example:My3DPrinter;1"
+    },
+    "idShort": "DTDLModel",
+    "category": "VARIABLE",
+    "displayName": [
+        {
+            "language": "en",
+            "text": "3D-Printer"
+        },
+        {
+            "language": "de",
+            "text": "3DDrucker"
+        }
+    ],
+    "descriptions": [
+        {
+            "language": "en",
+            "text": "ExampleModelofa3DPrinter."
+        }
+    ],
+    "modelType": {
+        "name": "Submodel"
+    },
+    "kind": "Instance",
+    "submodelElements": [
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": "dtmi:com:example:AssetDimensionsProperty;1",
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "ordered": "false",
+            "allowDuplicates": "true",
+            "idShort": "assetDimensions",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Assetdimensions"
+                }
+            ],
+            "descriptions": [
+                {
+                    "language": "en",
+                    "text": "Dimensionsofthisassetasspecifiedinschema"
+                }
+            ],
+            "category": "CONSTANT",
+            "modelType": {
+                "name": "SubmodelElementCollection"
+            },
+            "kind": "Instance",
+            "value": [
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Length",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                },
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Width",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                },
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Height",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                }
+            ]
+        },
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "writable",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "value": null,
+            "valueId": null,
+            "semanticId": {},
+            "hasDataSpecification": [],
+            "idShort": "manufacturerName",
+            "category": "VARIABLE",
+            "modelType": {
+                "name": "Property"
+            },
+            "valueType": "string",
+            "kind": "Instance",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "ManufacturerName"
+                }
+            ],
+            "descriptions": null
+        },
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "ordered": "false",
+            "allowDuplicates": "true",
+            "idShort": "manufacturerAddress",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "ManufacturerAddress"
+                }
+            ],
+            "descriptions": null,
+            "category": "CONSTANT",
+            "modelType": {
+                "name": "SubmodelElementCollection"
+            },
+            "kind": "Instance",
+            "value": [
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Telephone",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                },
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Street",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                },
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "ZipCode",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "integer",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                },
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "City",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                },
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Country",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                }
+            ]
+        },
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "ordered": "false",
+            "allowDuplicates": "true",
+            "idShort": "userManual",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "UserManual"
+                }
+            ],
+            "descriptions": null,
+            "category": "CONSTANT",
+            "modelType": {
+                "name": "SubmodelElementCollection"
+            },
+            "kind": "Instance",
+            "value": [
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Path",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                }
+            ]
+        },
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "value": "",
+            "valueId": null,
+            "semanticId": {
+                "keys": [
+                    {
+                        "type": "ConceptDescription",
+                        "local": "true",
+                        "value": "degreeCelsius",
+                        "index": "0",
+                        "idType": "Custom"
+                    }
+                ]
+            },
+            "hasDataSpecification": [],
+            "idShort": "printHeadTemperature",
+            "category": "CONSTANT",
+            "modelType": {
+                "name": "Property"
+            },
+            "valueType": "double",
+            "kind": "Instance",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Printheadtemperature"
+                }
+            ],
+            "descriptions": [
+                {
+                    "language": "en",
+                    "text": "CurrenttemperatureoftheprintheadinTemperatureindegreesCelsius."
+                }
+            ]
+        },
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "writable",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "value": null,
+            "valueId": null,
+            "semanticId": {},
+            "hasDataSpecification": [],
+            "idShort": "printHeadTemperatureReached",
+            "category": "VARIABLE",
+            "modelType": {
+                "name": "Property"
+            },
+            "valueType": "boolean",
+            "kind": "Instance",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Printheadtemperaturereached"
+                }
+            ],
+            "descriptions": [
+                {
+                    "language": "en",
+                    "text": "Truewhentheprintheadtemperaturewasreached."
+                }
+            ]
+        },
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "value": "",
+            "valueId": null,
+            "semanticId": {
+                "keys": [
+                    {
+                        "type": "ConceptDescription",
+                        "local": "true",
+                        "value": "degreeCelsius",
+                        "index": "0",
+                        "idType": "Custom"
+                    }
+                ]
+            },
+            "hasDataSpecification": [],
+            "idShort": "desiredTemperature",
+            "category": "CONSTANT",
+            "modelType": {
+                "name": "Property"
+            },
+            "valueType": "double",
+            "kind": "Instance",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Desiredtemperature"
+                }
+            ],
+            "descriptions": [
+                {
+                    "language": "en",
+                    "text": "Desiredprintheadtemperature."
+                }
+            ]
+        },
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "value": "",
+            "valueId": null,
+            "semanticId": {
+                "keys": [
+                    {
+                        "type": "ConceptDescription",
+                        "local": "true",
+                        "value": "millimetre",
+                        "index": "0",
+                        "idType": "Custom"
+                    }
+                ]
+            },
+            "hasDataSpecification": [],
+            "idShort": "printHeadProximity",
+            "category": "CONSTANT",
+            "modelType": {
+                "name": "Property"
+            },
+            "valueType": "double",
+            "kind": "Instance",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Printheadproximitytoobject"
+                }
+            ],
+            "descriptions": [
+                {
+                    "language": "en",
+                    "text": "Currentproximityoftheprintheadtotheprintedobjectinmillimetres"
+                }
+            ]
+        },
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "commandType",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "semanticId": {},
+            "hasDataSpecification": [],
+            "idShort": "startProgram",
+            "category": null,
+            "modelType": {
+                "name": "Operation"
+            },
+            "inputVariable": [
+                {
+                    "value": {
+                        "constraints": [
+                            {
+                                "type": "@id",
+                                "valueType": "string",
+                                "value": null,
+                                "modelType": {
+                                    "name": "Qualifier"
+                                }
+                            },
+                            {
+                                "type": "comment",
+                                "valueType": "string",
+                                "value": null,
+                                "modelType": {
+                                    "name": "Qualifier"
+                                }
+                            },
+                            {
+                                "type": "writable",
+                                "valueType": "string",
+                                "value": null,
+                                "modelType": {
+                                    "name": "Qualifier"
+                                }
+                            }
+                        ],
+                        "value": null,
+                        "valueId": null,
+                        "semanticId": {},
+                        "hasDataSpecification": [],
+                        "idShort": "name",
+                        "category": "VARIABLE",
+                        "modelType": {
+                            "name": "Property"
+                        },
+                        "valueType": "string",
+                        "kind": "Instance",
+                        "displayName": [
+                            {
+                                "language": "en",
+                                "text": "ProgramName"
+                            }
+                        ],
+                        "descriptions": [
+                            {
+                                "language": "en",
+                                "text": "Nameofprogramtobestarted."
+                            }
+                        ]
+                    },
+                    "modelType": {
+                        "name": "OperationVariable"
+                    }
+                }
+            ],
+            "outputVariable": [
+                {
+                    "value": {
+                        "constraints": [
+                            {
+                                "type": "@id",
+                                "valueType": "string",
+                                "value": null,
+                                "modelType": {
+                                    "name": "Qualifier"
+                                }
+                            },
+                            {
+                                "type": "comment",
+                                "valueType": "string",
+                                "value": null,
+                                "modelType": {
+                                    "name": "Qualifier"
+                                }
+                            },
+                            {
+                                "type": "writable",
+                                "valueType": "string",
+                                "value": null,
+                                "modelType": {
+                                    "name": "Qualifier"
+                                }
+                            }
+                        ],
+                        "value": null,
+                        "valueId": null,
+                        "semanticId": {},
+                        "hasDataSpecification": [],
+                        "idShort": "statusCode",
+                        "category": "VARIABLE",
+                        "modelType": {
+                            "name": "Property"
+                        },
+                        "valueType": "string",
+                        "kind": "Instance",
+                        "displayName": [
+                            {
+                                "language": "en",
+                                "text": "Reponsestatuscode"
+                            }
+                        ],
+                        "descriptions": [
+                            {
+                                "language": "en",
+                                "text": "Statuscodeoftheprogram'sresult."
+                            }
+                        ]
+                    },
+                    "modelType": {
+                        "name": "OperationVariable"
+                    }
+                }
+            ],
+            "kind": "Instance",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "StartProgram"
+                }
+            ],
+            "descriptions": [
+                {
+                    "language": "en",
+                    "text": "Startsaprogramspecifiedbyitsname."
+                }
+            ]
+        },
+        {
+            "value": {
+                "keys": [
+                    {
+                        "type": "Submodel",
+                        "local": "false",
+                        "value": "dtmi:com:example:FilamentStorage;1",
+                        "index": "0",
+                        "idType": "Custom"
+                    }
+                ]
+            },
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "idShort": "filamentStorage",
+            "category": "CONSTANT",
+            "modelType": {
+                "name": "ReferenceElement"
+            },
+            "kind": "Instance",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "FilamentStorage"
+                }
+            ],
+            "descriptions": [
+                {
+                    "language": "en",
+                    "text": "Filamentstorageassourceofmaterialforthisprinter."
+                }
+            ]
+        }
+    ]
+}

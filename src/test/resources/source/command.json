@@ -1,0 +1,18 @@
+{
+    "@type": "Command",
+    "name": "startProgram",
+    "displayName": "Start Program",
+    "description": "Starts a program specified by its name.",
+    "request": {
+        "name": "name",
+        "displayName": "Program Name",
+        "description": "Name of program to be started.",
+        "schema": "string"
+    },
+    "response": {
+        "name": "statusCode",
+        "displayName": "Reponse status code",
+        "description": "Status code of the program's result.",
+        "schema": "string"
+    }
+}

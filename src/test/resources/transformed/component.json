@@ -1,0 +1,49 @@
+{
+    "value": {
+        "keys": [
+            {
+                "type": "Submodel",
+                "local": "false",
+                "value": "dtmi:com:example:FilamentStorage;1",
+                "index": "0",
+                "idType": "Custom"
+            }
+        ]
+    },
+    "constraints": [
+        {
+            "type": "@id",
+            "valueType": "string",
+            "value": "dtmi:com:example:FilamentStorageComponent;1",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "comment",
+            "valueType": "string",
+            "value": "A filament storage component element",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "idShort": "filamentStorage",
+    "category": "CONSTANT",
+    "modelType": {
+        "name": "ReferenceElement"
+    },
+    "kind": "Instance",
+    "displayName": [
+        {
+            "language": "en",
+            "text": "Filament Storage"
+        }
+    ],
+    "descriptions": [
+        {
+            "language": "en",
+            "text": "Filament storage as source of material for this printer."
+        }
+    ]
+}

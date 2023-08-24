@@ -1,0 +1,39 @@
+{
+  "first": {
+    "keys": []
+  },
+  "second": {
+    "keys": [
+      {
+        "type": "Submodel",
+        "local": false,
+        "value": "$.['target']",
+        "index": 0,
+        "idType": "Custom"
+      }
+    ]
+  },
+  "semanticId": {
+    "keys": []
+  },
+  "constraints": [
+    {
+      "type": "@id",
+      "valueType": "string",
+      "value": "$.['@id']",
+      "modelType": {
+        "name": "Qualifier"
+      }
+    }
+  ],
+  "hasDataSpecification": null,
+  "idShort": "$.name",
+  "category": null,
+  "modelType": {
+    "name": "AnnotatedRelationshipElement"
+  },
+  "annotations": [],
+  "kind": "Instance",
+  "displayName": null,
+  "descriptions": null
+}

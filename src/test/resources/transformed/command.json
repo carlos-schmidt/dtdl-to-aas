@@ -1,0 +1,164 @@
+{
+    "constraints": [
+        {
+            "type": "@id",
+            "valueType": "string",
+            "value": null,
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "comment",
+            "valueType": "string",
+            "value": null,
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "commandType",
+            "valueType": "string",
+            "value": null,
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "semanticId": {},
+    "hasDataSpecification": [],
+    "idShort": "startProgram",
+    "category": null,
+    "modelType": {
+        "name": "Operation"
+    },
+    "inputVariable": [
+        {
+            "value": {
+                "constraints": [
+                    {
+                        "type": "@id",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    },
+                    {
+                        "type": "comment",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    },
+                    {
+                        "type": "writable",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    }
+                ],
+                "value": null,
+                "valueId": null,
+                "semanticId": {},
+                "hasDataSpecification": [],
+                "idShort": "name",
+                "category": "VARIABLE",
+                "modelType": {
+                    "name": "Property"
+                },
+                "valueType": "string",
+                "kind": "Instance",
+                "displayName": [
+                    {
+                        "language": "en",
+                        "text": "Program Name"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "language": "en",
+                        "text": "Name of program to be started."
+                    }
+                ]
+            },
+            "modelType": {
+                "name": "OperationVariable"
+            }
+        }
+    ],
+    "outputVariable": [
+        {
+            "value": {
+                "constraints": [
+                    {
+                        "type": "@id",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    },
+                    {
+                        "type": "comment",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    },
+                    {
+                        "type": "writable",
+                        "valueType": "string",
+                        "value": null,
+                        "modelType": {
+                            "name": "Qualifier"
+                        }
+                    }
+                ],
+                "value": null,
+                "valueId": null,
+                "semanticId": {},
+                "hasDataSpecification": [],
+                "idShort": "statusCode",
+                "category": "VARIABLE",
+                "modelType": {
+                    "name": "Property"
+                },
+                "valueType": "string",
+                "kind": "Instance",
+                "displayName": [
+                    {
+                        "language": "en",
+                        "text": "Reponse status code"
+                    }
+                ],
+                "descriptions": [
+                    {
+                        "language": "en",
+                        "text": "Status code of the program's result."
+                    }
+                ]
+            },
+            "modelType": {
+                "name": "OperationVariable"
+            }
+        }
+    ],
+    "kind": "Instance",
+    "displayName": [
+        {
+            "language": "en",
+            "text": "Start Program"
+        }
+    ],
+    "descriptions": [
+        {
+            "language": "en",
+            "text": "Starts a program specified by its name."
+        }
+    ]
+}

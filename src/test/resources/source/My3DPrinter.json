@@ -1,0 +1,160 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:example:My3DPrinter;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "3D-Printer",
+        "de": "3D Drucker"
+    },
+    "description": "Example Model of a 3D Printer.",
+    "contents": [
+        {
+            "@id": "dtmi:com:example:AssetDimensionsProperty;1",
+            "@type": "Property",
+            "name": "assetDimensions",
+            "displayName": "Asset dimensions",
+            "description": "Dimensions of this asset as specified in schema",
+            "schema": "dtmi:com:example:dimensions;1",
+            "writable": false
+        },
+        {
+            "@type": "Property",
+            "name": "manufacturerName",
+            "displayName": "Manufacturer Name",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "manufacturerAddress",
+            "displayName": "Manufacturer Address",
+            "schema": "dtmi:com:example:ManufacturerAddress;1"
+        },
+        {
+            "@type": "Property",
+            "name": "userManual",
+            "displayName": "User Manual",
+            "schema": "dtmi:com:example:File;1"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Temperature"
+            ],
+            "name": "printHeadTemperature",
+            "displayName": "Print head temperature",
+            "description": "Current temperature of the print head in Temperature in degrees Celsius.",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "printHeadTemperatureReached",
+            "displayName": "Print head temperature reached",
+            "description": "True when the print head temperature was reached.",
+            "schema": "boolean"
+        },
+        {
+            "@type": [
+                "Property",
+                "Temperature"
+            ],
+            "name": "desiredTemperature",
+            "displayName": "Desired temperature",
+            "description": "Desired print head temperature.",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "Length"
+            ],
+            "name": "printHeadProximity",
+            "displayName": "Print head proximity to object",
+            "description": "Current proximity of the print head to the printed object in millimetres",
+            "schema": "double",
+            "unit": "millimetre"
+        },
+        {
+            "@type": "Command",
+            "name": "startProgram",
+            "displayName": "Start Program",
+            "description": "Starts a program specified by its name.",
+            "request": {
+                "name": "name",
+                "displayName": "Program Name",
+                "description": "Name of program to be started.",
+                "schema": "string"
+            },
+            "response": {
+                "name": "statusCode",
+                "displayName": "Reponse status code",
+                "description": "Status code of the program's result.",
+                "schema": "string"
+            }
+        },
+        {
+            "@type": "Component",
+            "schema": "dtmi:com:example:FilamentStorage;1",
+            "name": "filamentStorage",
+            "displayName": "Filament Storage",
+            "description": "Filament storage as source of material for this printer."
+        }
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:example:dimensions;1",
+            "@type": "Object",
+            "fields": [
+                {
+                    "name": "Length",
+                    "schema": "string"
+                },
+                {
+                    "name": "Width",
+                    "schema": "string"
+                },
+                {
+                    "name": "Height",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@id": "dtmi:com:example:ManufacturerAddress;1",
+            "@type": "Object",
+            "fields": [
+                {
+                    "name": "Telephone",
+                    "schema": "string"
+                },
+                {
+                    "name": "Street",
+                    "schema": "string"
+                },
+                {
+                    "name": "ZipCode",
+                    "schema": "integer"
+                },
+                {
+                    "name": "City",
+                    "schema": "string"
+                },
+                {
+                    "name": "Country",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@id": "dtmi:com:example:File;1",
+            "@type": "Object",
+            "fields": [
+                {
+                    "name": "Path",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "@id": "dtmi:com:example:AssetDimensionsProperty;1",
+    "@type": "Property",
+    "name": "complexEnumTypeInternallyDefined",
+    "displayName": "ComplexTypeExample",
+    "description": "This is an example property containing an enum as complex type",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "offline",
+                "displayName": "Offline",
+                "enumValue": 1
+            },
+            {
+                "name": "online",
+                "displayName": "Online",
+                "enumValue": 2
+            }
+        ]
+    },
+    "writable": false
+}

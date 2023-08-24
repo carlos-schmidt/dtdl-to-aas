@@ -1,0 +1,126 @@
+{
+    "constraints": [
+        {
+            "type": "@id",
+            "valueType": "string",
+            "value": "dtmi:com:example:AssetDimensionsProperty;1",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "ordered": "false",
+    "allowDuplicates": "true",
+    "idShort": "complexEnumTypeInternallyDefined",
+    "displayName": [
+        {
+            "language": "en",
+            "text": "ComplexTypeExample"
+        }
+    ],
+    "descriptions": [
+        {
+            "language": "en",
+            "text": "Thisisanexamplepropertycontaininganenumascomplextype"
+        }
+    ],
+    "category": "CONSTANT",
+    "modelType": {
+        "name": "SubmodelElementCollection"
+    },
+    "kind": "Instance",
+    "value": [
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "writable",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "value": 1,
+            "valueId": null,
+            "semanticId": {},
+            "hasDataSpecification": [],
+            "idShort": "offline",
+            "category": "VARIABLE",
+            "modelType": {
+                "name": "Property"
+            },
+            "valueType": "integer",
+            "kind": "Instance",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Offline"
+                }
+            ],
+            "descriptions": null
+        },
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "comment",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                },
+                {
+                    "type": "writable",
+                    "valueType": "string",
+                    "value": null,
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "value": 2,
+            "valueId": null,
+            "semanticId": {},
+            "hasDataSpecification": [],
+            "idShort": "online",
+            "category": "VARIABLE",
+            "modelType": {
+                "name": "Property"
+            },
+            "valueType": "integer",
+            "kind": "Instance",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Online"
+                }
+            ],
+            "descriptions": null
+        }
+    ]
+}

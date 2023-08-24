@@ -1,0 +1,41 @@
+{
+    "constraints": [
+        {
+            "type": "@id",
+            "valueType": "string",
+            "value": "$.['@id']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "comment",
+            "valueType": "string",
+            "value": "$.['comment']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "writable",
+            "valueType": "string",
+            "value": "$.['writable']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "value": "$.enumValue",
+    "valueId": null,
+    "semanticId": {},
+    "hasDataSpecification": [],
+    "idShort": "$.name",
+    "category": "VARIABLE",
+    "modelType": {
+        "name": "Property"
+    },
+    "valueType": "$.schema",
+    "kind": "Instance",
+    "displayName": null,
+    "descriptions": null
+}

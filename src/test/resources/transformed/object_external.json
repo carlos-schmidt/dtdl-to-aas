@@ -1,0 +1,195 @@
+{
+    "semanticId": {
+        "keys": []
+    },
+    "qualifiers": [
+        {
+            "type": "@context",
+            "valueType": "string",
+            "value": null,
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "comment",
+            "valueType": "string",
+            "value": null,
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "hasDataSpecification": null,
+    "identification": {
+        "idType": "Custom",
+        "id": null
+    },
+    "idShort": "DTDLModel",
+    "category": "VARIABLE",
+    "displayName": null,
+    "descriptions": null,
+    "modelType": {
+        "name": "Submodel"
+    },
+    "kind": "Instance",
+    "submodelElements": [
+        {
+            "constraints": [
+                {
+                    "type": "@id",
+                    "valueType": "string",
+                    "value": "dtmi:com:example:AssetDimensionsProperty;1",
+                    "modelType": {
+                        "name": "Qualifier"
+                    }
+                }
+            ],
+            "ordered": "false",
+            "allowDuplicates": "true",
+            "idShort": "assetDimensions",
+            "displayName": [
+                {
+                    "language": "en",
+                    "text": "Assetdimensions"
+                }
+            ],
+            "descriptions": [
+                {
+                    "language": "en",
+                    "text": "Dimensionsofthisassetasspecifiedinschema"
+                }
+            ],
+            "category": "CONSTANT",
+            "modelType": {
+                "name": "SubmodelElementCollection"
+            },
+            "kind": "Instance",
+            "value": [
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Length",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                },
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Width",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                },
+                {
+                    "constraints": [
+                        {
+                            "type": "@id",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        },
+                        {
+                            "type": "writable",
+                            "valueType": "string",
+                            "value": null,
+                            "modelType": {
+                                "name": "Qualifier"
+                            }
+                        }
+                    ],
+                    "value": null,
+                    "valueId": null,
+                    "semanticId": {},
+                    "hasDataSpecification": [],
+                    "idShort": "Height",
+                    "category": "VARIABLE",
+                    "modelType": {
+                        "name": "Property"
+                    },
+                    "valueType": "string",
+                    "kind": "Instance",
+                    "displayName": null,
+                    "descriptions": null
+                }
+            ]
+        }
+    ]
+}

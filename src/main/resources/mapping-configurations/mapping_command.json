@@ -1,0 +1,54 @@
+{
+    "constraints": [
+        {
+            "type": "@id",
+            "valueType": "string",
+            "value": "$.['@id']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "comment",
+            "valueType": "string",
+            "value": "$.['comment']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "commandType",
+            "valueType": "string",
+            "value": "$.['commandType']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "semanticId": {},
+    "hasDataSpecification": [],
+    "idShort": "$.name",
+    "category": null,
+    "modelType": {
+        "name": "Operation"
+    },
+    "inputVariable": [
+        {
+            "value": null,
+            "modelType": {
+                "name": "OperationVariable"
+            }
+        }
+    ],
+    "outputVariable": [
+        {
+            "value": null,
+            "modelType": {
+                "name": "OperationVariable"
+            }
+        }
+    ],
+    "kind": "Instance",
+    "displayName": null,
+    "descriptions": null
+}

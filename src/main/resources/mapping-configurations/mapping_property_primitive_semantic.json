@@ -1,0 +1,43 @@
+{
+    "constraints": [
+        {
+            "type": "@id",
+            "valueType": "string",
+            "value": "$.['@id']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "comment",
+            "valueType": "string",
+            "value": "$.['comment']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "value": "",
+    "valueId": null,
+    "semanticId": {
+        "keys": [
+            {
+                "type": "ConceptDescription",
+                "local": true,
+                "value": "ConceptDescription|$.['@type'][1]|$.unit",
+                "index": 0,
+                "idType": "Custom"
+            }
+        ]
+    },
+    "hasDataSpecification": [],
+    "idShort": "$.name",
+    "category": "CONSTANT",
+    "modelType": {
+        "name": "Property"
+    },
+    "valueType": "$.schema",
+    "kind": "Instance",
+    "displayName": null,
+    "descriptions": null
+}

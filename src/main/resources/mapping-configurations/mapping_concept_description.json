@@ -1,0 +1,49 @@
+{
+    "qualifiers": [
+        {
+            "type": "@id",
+            "valueType": "string",
+            "value": "$.['@id']",
+            "modelType": { "name": "Qualifier" }
+        }
+    ],
+    "identification": {
+        "idType": "Custom",
+        "id": "ConceptDescription|$.['@type'][1]|$.unit"
+    },
+    "idShort": "$.['@type'][1]",
+    "modelType": {
+        "name": "ConceptDescription"
+    },
+    "embeddedDataSpecifications": [
+        {
+            "dataSpecification": {
+                "keys": [
+                    {
+                        "type": "GlobalReference",
+                        "local": false,
+                        "value": "https://reference.opcfoundation.org/v104/I4AAS/v100/docs/6.10.3/",
+                        "index": 0,
+                        "idType": "IRI"
+                    }
+                ]
+            },
+            "dataSpecificationContent": {
+                "preferredName": [
+                    {
+                        "language": "EN",
+                        "text": "$.['@type'][1]|$.unit"
+                    }
+                ],
+                "unit": "$.['unit']",
+                "dataType": "$.['schema']",
+                "definition": [
+                    {
+                        "language": "EN",
+                        "text": "Refer to https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#semantic-types"
+                    }
+                ]
+            }
+        }
+    ]
+}

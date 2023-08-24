@@ -1,0 +1,39 @@
+{
+  "value": {
+    "keys": [
+      {
+        "type": "Submodel",
+        "local": false,
+        "value": "$.['schema']",
+        "index": 0,
+        "idType": "Custom"
+      }
+    ]
+  },
+  "constraints": [
+    {
+      "type": "@id",
+      "valueType": "string",
+      "value": "$.['@id']",
+      "modelType": {
+        "name": "Qualifier"
+      }
+    },
+    {
+      "type": "comment",
+      "valueType": "string",
+      "value": "$.['comment']",
+      "modelType": {
+        "name": "Qualifier"
+      }
+    }
+  ],
+  "idShort": "$.name",
+  "category": "CONSTANT",
+  "modelType": {
+    "name": "ReferenceElement"
+  },
+  "kind": "Instance",
+  "displayName": null,
+  "descriptions": null
+}

@@ -1,0 +1,37 @@
+{
+    "semanticId": {
+        "keys": []
+    },
+    "qualifiers": [
+        {
+            "type": "@context",
+            "valueType": "string",
+            "value": "$.['@context']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        },
+        {
+            "type": "comment",
+            "valueType": "string",
+            "value": "$.['comment']",
+            "modelType": {
+                "name": "Qualifier"
+            }
+        }
+    ],
+    "hasDataSpecification": null,
+    "identification": {
+        "idType": "Custom",
+        "id": "$.['@id']"
+    },
+    "idShort": "DTDLModel",
+    "category": "VARIABLE",
+    "displayName": null,
+    "descriptions": null,
+    "modelType": {
+        "name": "Submodel"
+    },
+    "kind": "Instance",
+    "submodelElements": null
+}

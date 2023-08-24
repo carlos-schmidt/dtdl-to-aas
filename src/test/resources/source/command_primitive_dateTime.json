@@ -1,0 +1,16 @@
+{
+    "@type": "Command",
+    "name": "reboot",
+    "request": {
+        "name": "rebootTime",
+        "@id": "dtmi:hello:world:Id;1234",
+        "displayName": "Reboot Time",
+        "description": "Requested time to reboot the device.",
+        "schema": "dateTime"
+    },
+    "response": {
+        "comment": "This is a test comment... #Test",
+        "name": "scheduledTime",
+        "schema": "dateTime"
+    }
+}

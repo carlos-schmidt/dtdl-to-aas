@@ -1,0 +1,34 @@
+{
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:com:example:AssetDimensionsProperty;1",
+            "@type": "Property",
+            "name": "assetDimensions",
+            "displayName": "Asset dimensions",
+            "description": "Dimensions of this asset as specified in schema",
+            "schema": "dtmi:com:example:dimensions;1",
+            "writable": false
+        }
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:example:dimensions;1",
+            "@type": "Object",
+            "fields": [
+                {
+                    "name": "Length",
+                    "schema": "string"
+                },
+                {
+                    "name": "Width",
+                    "schema": "string"
+                },
+                {
+                    "name": "Height",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
